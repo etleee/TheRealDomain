@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ethan Lee</title>
+    <link rel="shortcut icon" type="image/jpg" href="../images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body{
+        color: white;
+        background-color: rgb(139, 214, 255);
+        font-family: 'Merriweather', serif;
+        }
+
+        .header{
+            background-size: cover;  
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            height: 50vh;
+        }
+
+        .header>h2
+        {
+          color: black;
+        }
+
+        .header{
+            background-image: url("https://i0.wp.com/timesofsandiego.com/wp-content/uploads/2020/07/UCSD-UC-San-Diego-e1636304447825.jpg?ssl=1");
+            animation: slidein 3s;
+        }
+
+        @keyframes slidein {
+            from {
+            margin-left: 110%;
+            width: 300%;
+            opacity: 0;
+            }
+
+            to {
+            margin-left: 0%;
+            width: 100%;
+            opacity: 1;
+            }
+        }
+
+        .container{
+        display: flex;
+        justify-content: space-evenly;
+        }
+
+        section{
+        line-height: 2em;
+        }
+
+        .section1, .section2, footer, aside{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
+        .section1{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        }
+
+        .section2{
+        color: black;
+        }
+
+        aside{
+        background-color: #32C;
+        float: right;
+        width: 30%;
+        border: 10px solid black;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        }
+
+        button {
+        background-color: #4CAF50;
+        border: white 2px solid;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: block;
+        font-size: 16px;
+        width: 33%;
+        margin: 5% 33%;
+        }
+
+        .gallery{
+            width: 23%;
+            height: 100px; 
+            transition: width 2s, height 2s, transform 2s; 
+        }
+
+        .gallery:hover {
+            width: 600px;
+            height: 400px;
+            transform: rotate(360deg);
+        }
+
+        .aside_image{
+          width: 30%;
+          margin: 5%;
+        }
+    </style>
+</head>
+  <body>
+    <header class="header">
+      <h2>Ethan Lee: Sample Portfolio</h2>
+    </header>
+    <div>
+        <aside>
+          <h2>Fun Fact!</h2>
+          <p>I am a huge fan of collecting diecast cars, currently about 600 and counting! Some of my newest additions are below:</p>
+          <img src="https://ae01.alicdn.com/kf/Hb2dbc03c95dd46c0972d0a692cddd51cc/Takara-Tomy-Tomica-No-50-Toyota-GR-Yaris-Car-Hot-Pop-Kids-Toys-Motor-Vehicle-Diecast.jpg" alt="" class="aside_image">
+          <img src="https://www.1999.co.jp/itbig87/10871166a4_m.jpg" alt="" class="aside_image">
+        </aside>
+        <section class = "section2">
+          <h2 class="article">
+            My name is <a href="https://www.linkedin.com/in/ethan-lee-2847981b0/">Ethan Lee</a> and I am a junior computer science student at UC San Diego. Since I started learning to code, my goal has been to make technology cooler, more accessible, and something everyone can interact with. I believe that when people use technology to do amazing things, they build a relationship of sorts with that technology, and I want to help others make the most out of those relationships to bring their visions to reality.
+          </h2>
+          <div class="container">
+            <img src="https://res.klook.com/image/upload/v1620801672/HK%20-%20Destination%20Page%20Content/210512_Klook_HK_DestinationPageContent_AquaLuna_Mobile_App.jpg" alt="" class="gallery" >
+            <img src="https://media.timeout.com/images/105811993/750/422/image.jpg" alt="" class="gallery" >
+            <img src="https://a.cdn-hotels.com/gdcs/production112/d1660/184cb784-ffad-46c3-9e84-9a4d5dd2f3ad.jpg" alt="" class="gallery" >
+            <img src="https://cdn.theculturetrip.com/wp-content/uploads/2020/05/gettyimages-585771930-1024x683.jpg" alt="" class="gallery" >
+          </div>
+        </section>
+        <section class = "section1">       
+          <h2 class="article">
+              I am proficient with Java, Python, and the HTML/CSS/JS trio and I have experience with Agile development. With me in your organization, you don’t just get a fresh engineer; You get someone who knows how to communicate ideas with diverse audiences and is willing to solve problems that others would not address.        
+          </h2>
+        </section>
+    </div>
+  </body>
+</html>
