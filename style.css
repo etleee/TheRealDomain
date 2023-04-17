@@ -1,0 +1,101 @@
+body{
+color: white;
+background-color: rgb(255, 226, 131);
+font-family: 'Merriweather', serif;
+}
+
+.header{
+    background-size: cover;  
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    height: 50vh;
+}
+
+.header>h2
+{
+  color: black;
+}
+
+.header{
+    background-image: url("https://i0.wp.com/timesofsandiego.com/wp-content/uploads/2020/07/UCSD-UC-San-Diego-e1636304447825.jpg?ssl=1");
+    animation: slidein 3s;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 110%;
+    width: 300%;
+    opacity: 0;
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+    }
+}
+
+.container{
+display: flex;
+justify-content: space-evenly;
+}
+
+section{
+line-height: 2em;
+}
+
+.section1, .section2, footer, aside{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.section1{
+background-color: rgb(255, 255, 255);
+color: black;
+}
+
+.section2{
+color: black;
+}
+
+aside{
+background-color: #32C;
+float: right;
+width: 30%;
+border: 10px solid black;
+text-align: center;
+justify-content: center;
+align-content: center;
+}
+
+button {
+background-color: #4CAF50;
+border: white 2px solid;
+color: white;
+padding: 15px 32px;
+text-align: center;
+display: block;
+font-size: 16px;
+width: 33%;
+margin: 5% 33%;
+}
+
+.gallery{
+    width: 23%;
+    height: 100px; 
+    transition: width 2s, height 2s, transform 2s; 
+}
+
+.gallery:hover {
+    width: 600px;
+    height: 400px;
+    transform: rotate(360deg);
+}
+
+.aside_image{
+  width: 30%;
+  margin: 5%;
+}
